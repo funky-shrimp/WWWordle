@@ -79,7 +79,7 @@ class Answer {
       }
 
       if (!Answer.#isAlphaNumeric(userAnswer)) {
-        this.#game.displayMessage("Answer must contain only letter, fool !");
+        this.#game.displayMessage("Answer must contain only letter¨s, fool !");
       } else if (userAnswer.length < this.#LETTERS) {
         this.#game.displayMessage(
           `Answer must be ${this.#LETTERS} letters long, punk !`
@@ -94,7 +94,7 @@ class Answer {
         this.colorLetters(data.feedback);
         if (Answer.#isCorrectAnswer(data.feedback, this.#LETTERS)) {
           this.#game.displayMessage("Congratulations ! You found the word, Champ !")
-          this.#form.switchInert()
+          this.switchInert()
         }else{
           this.#game.nextRow()
         }

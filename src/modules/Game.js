@@ -34,6 +34,7 @@ class Game {
   }
 
   nextRow() {
+    this.#tries--
     if(this.#tries == 0){
         this.displayMessage("Game Over")
         return
@@ -48,9 +49,7 @@ class Game {
       this.#currentRow.switchInert();
       console.log(this.#currentRow)
       this.#currentRow.focusOnFirstInput()
-    }
-
-    this.#tries
+    } 
   }
 
   displayMessage(message) {
