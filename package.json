@@ -1,0 +1,28 @@
+{
+  "name": "wwwordle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/funky-shrimp/WWWordle#readme",
+  "bugs": {
+    "url": "https://github.com/funky-shrimp/WWWordle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funky-shrimp/WWWordle.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "Vite": "npm:vite@^6.0.11"
+  }
+}
